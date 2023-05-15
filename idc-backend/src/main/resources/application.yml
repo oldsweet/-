@@ -24,7 +24,7 @@ spring:
     name: learn_backEnd
   datasource:
     username: root
-    password: Aa010326.
+    password: 123456
     url: jdbc:mysql://localhost:3306/idc?useSSH=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
