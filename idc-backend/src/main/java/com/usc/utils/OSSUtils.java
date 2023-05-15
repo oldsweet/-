@@ -15,8 +15,8 @@ public class OSSUtils {
     // https://help.aliyun.com/document_detail/32007.html?spm=a2c4g.52834.0.0.77f962a9dJwzE0
     // 按照文档配置好阿里云对象存储的配置
     private static String endpoint = "https://oss-cn-hangzhou.aliyuncs.com";
-    private static String accessKeyId = "LTAI5tP3QNkDXJ2xDow8xowv";
-    private static String accessKeySecret = "kNS2DfZHRSbCGRdmwkD02hPT62yiEP";
+    private static String accessKeyId = "LTAI5tP3QN*****w8xowv";
+    private static String accessKeySecret = "kNS2DfZH******kD02hPT62yiEP";
     private static String bucketName = "learn-interactive-video";
 
     public static String urlToObjectName(String url){
