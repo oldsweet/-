@@ -1,4 +1,6 @@
-<center> <img src=".\logo.png" style="zoom:33%;" /></center>
+<p align="center">
+<img src=".\logo.png" style="zoom:33%;" />
+</p> 
 <center> <h3>南瓜云盘</h3> </center>
 <P><center><i>一个轻量的在线存储云盘</i></center></p>
 # 平台介绍
