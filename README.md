@@ -5,7 +5,7 @@
 <p align="center">一个轻量的在线存储云盘</p>
 
 # 平台介绍
-南瓜云盘是一个基于`vue+springboot +MyBatis-plus`的轻量级的云盘系统。通过该系统，用户将文件存储到指定的云存储平台。
+南瓜云盘是一个基于`vue+springboot+MyBatis-plus`的轻量级的云盘系统。通过该系统，用户将文件存储到指定的云存储平台。
 
 # 后端配置启动
 
