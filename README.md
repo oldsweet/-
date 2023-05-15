@@ -1,8 +1,8 @@
 <p align="center">
 <img src=".\logo.png" style="zoom:33%;" />
-</p> 
-<center> <h3>南瓜云盘</h3> </center>
-<P><center><i>一个轻量的在线存储云盘</i></center></p>
+</p>
+<h3 align="center">南瓜云盘</h3>
+<p align="center">一个轻量的在线存储云盘</p>
 # 平台介绍
 
 南瓜云盘是一个基于`vue+springboot +MyBatis-plus`的轻量级的云盘系统。通过该系统，用户将文件存储到指定的云存储平台。
