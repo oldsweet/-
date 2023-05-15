@@ -21,7 +21,7 @@ public class CodeGenerator {
         final String authorName = "Baisong Li";
         final String packageName = "com.usc";
         final String username = "root";
-        final String password = "Aa010326";
+        final String password = "11234";
         final String dbURL = "jdbc:mysql://localhost:3306/idc?useSSH=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8";
         System.out.println("Author: " + authorName);
         System.out.println("packageName: " + packageName);
