@@ -15,7 +15,7 @@ import java.util.Random;
 public class MailUtils {
      // java mail 的教程 https://www.runoob.com/java/java-sending-email.html 启动项目前请按照教程配置好服务器和keyWord
     static private String masterMail = "baisongli2023@163.com";
-    static private String keyPassword = "ORAJCADDGSAOADGY";
+    static private String keyPassword = "ORA***************SAOADGY";
     static private String smtp = "smtp.163.com";
 
     public static void sendMail(String receiveMail,String code) throws GeneralSecurityException, MessagingException {
