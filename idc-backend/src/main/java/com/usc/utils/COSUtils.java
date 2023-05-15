@@ -19,9 +19,9 @@ import java.io.IOException;
 
 public class COSUtils {
     // https://cloud.tencent.com/document/product/436/10199 腾讯对象存储文档
-    static String secretId = "AKIDSkfLmzymR3Ws287wshUJKNMSVTXdeaIm"; // 腾讯对象存储的secretId
-    static String secretKey = "KenjV6ZonfP2TzGKKDUdltyvjMpFVYYQ";// 腾讯对象存储的secretKey
-    static String bucket = "idc-1304582408"; // 腾讯对象存储的buketName
+    static String secretId = "AKID**************UJKNMSVTXdeaIm"; // 腾讯对象存储的secretId
+    static String secretKey = "KenjV6ZonfP2TzG******jMpFVYYQ";// 腾讯对象存储的secretKey
+    static String bucket = "idc-13045****08"; // 腾讯对象存储的buketName
     static String position = "ap-nanjing";// region 代号
 
     /**
