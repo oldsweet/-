@@ -1,0 +1,91 @@
+server:
+  port: 9091
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+spring:
+  jackson:
+    # yyyy-MM-dd HH:mm:ss 格式
+    #date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      # 毫秒时间戳格式
+      write-dates-as-timestamps: true
+  servlet:
+    multipart:
+      max-request-size: 100MB #????????????vue?????!!
+      max-file-size: 100MB
+  application:
+    name: learn_backEnd
+  datasource:
+    username: root
+    password: Aa010326.
+    url: jdbc:mysql://localhost:3306/idc?useSSH=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall,slf4j
+      aop-patterns: com.web.springbootdruid.service.*
+      connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      web-stat-filter:
+        enabled: true
+        url-pattern: "/*"
+        exclusions: "*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico,/druid/*"
+      stat-view-servlet:
+        url-pattern: "/druid/*"
+        allow: 127.0.0.1
+        reset-enable: false
+        login-username: admin
+        login-password: 123456
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml  #??????
+  type-aliases-package: com.hll.learn_backend.pojo
+  configuration:
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: true
+    mapUnderscoreToCamelCase: true
+
+
+#jwt:
+#  # ????
+#  secret: f4e2e52034348!@f86b67cde581c0f9eb5
+#  # token?????24??????
+#  expire: 86400
+
+
+
+############## Sa-Token ?? (??: https://sa-token.cc) ##############
+sa-token:
+  # token?? (????cookie??)
+  token-name: token
+  # token??????s ??30?, -1??????
+  timeout: 2592000
+  # token????? (???????????token??) ??: ?
+  activity-timeout: -1
+  # ???????????? (?true???????, ?false?????????)
+  is-concurrent: true
+  # ?????????????????token (?true?????????token, ?false?????????token)
+  is-share: true
+  # token??
+  token-style: uuid
+  # ????????
+  is-log: false
+  is-read-cookie: false
